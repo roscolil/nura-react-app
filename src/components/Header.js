@@ -4,7 +4,6 @@ import "../styles/styles.scss";
 export default function Header() {
   return (
     <div className="header">
-      <h1>This is the header</h1>
       <a href="https://www.nuraphone.com" className="nav-logo">
         <img src="../../public/assets/nura-icon.png" alt="nura" />
       </a>
