@@ -1,0 +1,12 @@
+.blog-list__wrapper {
+  @include site-width;
+  padding: 60px 0;
+}
+
+.blog-list__items {
+
+}
+
+a {
+  color: $charcoal;
+}

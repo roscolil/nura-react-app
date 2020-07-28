@@ -5,35 +5,37 @@ export default function Header() {
   return (
     <div className="header">
       <h1>This is the header</h1>
-      <a href="https://www.nuraphone.com" className="logo">
+      <a href="https://www.nuraphone.com" className="nav-logo">
         <img src="../../public/assets/nura-icon.png" alt="nura" />
       </a>
-      <div className="navlink-wrapper">
-        <a href="https://www.nuraphone.com" className="navlink">
-          nuranow
-        </a>
-        <a href="https://www.nuraphone.com" className="navlink">
-          nuraphone
-        </a>
-        <a href="https://www.nuraphone.com" className="navlink">
-          nuraloop
-        </a>
-        <a href="https://www.nuraphone.com" className="navlink">
-          How it Works
-        </a>
-        <a href="https://www.nuraphone.com" className="navlink">
-          Accessories
-        </a>
-        <a href="https://www.nuraphone.com" className="navlink">
-          Blog
-        </a>
-        <a href="https://www.nuraphone.com" className="navlink">
-          Support
-        </a>
-        <a href="https://www.nuraphone.com" className="cart">
+      <ul className="nav">
+        <li className="nav__item">
+          <a href="https://www.nuraphone.com">nuranow</a>
+        </li>
+        <li className="nav__item">
+          <a href="https://www.nuraphone.com">nuraphone</a>
+        </li>
+        <li className="nav__item">
+          <a href="https://www.nuraphone.com">nuraloop</a>
+        </li>
+        <li className="nav__item">
+          <a href="https://www.nuraphone.com">How it Works</a>
+        </li>
+        <li className="nav__item">
+          <a href="https://www.nuraphone.com">Accessories</a>
+        </li>
+        <li className="nav__item">
+          <a href="https://www.nuraphone.com">Blog</a>
+        </li>
+        <li className="nav__item">
+          <a href="https://www.nuraphone.com">Support</a>
+        </li>
+        <li className="cart">
           <img src="" alt="" />
-        </a>
-      </div>
+        </li>
+      </ul>
     </div>
   );
 }
+
+// TODO Add NavLink react-router-dom

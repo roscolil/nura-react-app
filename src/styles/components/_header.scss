@@ -1,3 +1,22 @@
 .header {
   @include site-width;
+  vertical-align: middle;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav__item {
+  margin: 0 20px;
+  display: inline-block;
 }

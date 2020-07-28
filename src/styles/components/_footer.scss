@@ -1,3 +1,12 @@
 .footer {
   @include site-width;
+  display: flex;
+  background: $charcoal;
+  height: 200px;
+  padding: 60px 0;
+  h1 {
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
 }
