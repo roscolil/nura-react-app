@@ -1,0 +1,4 @@
+.main-wrapper {
+  @include site-width;
+  background-color: $secondary-background-color;
+}
