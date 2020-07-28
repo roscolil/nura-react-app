@@ -17,7 +17,6 @@ export default function BlogList() {
 
   return (
     <div className="blog-list__wrapper">
-      <h1>This is a list of all the blog posts</h1>
       <div className="blog-list__items">
         {blogItems.map((value, index) => {
           return (
