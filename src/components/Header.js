@@ -1,33 +1,34 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../styles/styles.scss";
 
-export default function Header() {
+const Header = () => {
   return (
     <div className="header">
-      <a href="https://www.nuraphone.com" className="nav-logo">
-        <img src="../../public/assets/nura-icon.png" alt="nura" />
-      </a>
+      <NavLink to="/" className="nav-logo">
+        <img src="../../public/assets/Nura_Logo_Icon.png" alt="nura" />
+      </NavLink>
       <ul className="nav">
         <li className="nav__item">
-          <a href="https://www.nuraphone.com">nuranow</a>
+          <NavLink to="/nuranow" activeClassName="is-active">nuranow</NavLink>
         </li>
         <li className="nav__item">
-          <a href="https://www.nuraphone.com">nuraphone</a>
+          <NavLink to="/nuraphone" activeClassName="is-active">nuraphone</NavLink>
         </li>
         <li className="nav__item">
-          <a href="https://www.nuraphone.com">nuraloop</a>
+          <NavLink to="/nuraloop" activeClassName="is-active">nuraloop</NavLink>
         </li>
         <li className="nav__item">
-          <a href="https://www.nuraphone.com">How it Works</a>
+          <NavLink to="/how-it-works" activeClassName="is-active">How it Works</NavLink>
         </li>
         <li className="nav__item">
-          <a href="https://www.nuraphone.com">Accessories</a>
+          <NavLink to="/accessories" activeClassName="is-active">Accessories</NavLink>
         </li>
         <li className="nav__item">
-          <a href="https://www.nuraphone.com">Blog</a>
+          <NavLink to="/blog" activeClassName="is-active">Blog</NavLink>
         </li>
         <li className="nav__item">
-          <a href="https://www.nuraphone.com">Support</a>
+          <NavLink to="/support" activeClassName="is-active">Support</NavLink>
         </li>
         <li className="cart">
           <img src="" alt="" />
@@ -37,4 +38,5 @@ export default function Header() {
   );
 }
 
+export default Header;
 // TODO Add NavLink react-router-dom

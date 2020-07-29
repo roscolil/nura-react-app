@@ -1,0 +1,16 @@
+.blog__wrapper {
+  @include site-width;
+  display: flex;
+  align-items: center;
+  justify-items: center;;
+  padding: 60px 0;
+  border: 20px solid $white;
+}
+
+.blog__items {
+
+}
+
+a {
+  color: $charcoal;
+}
