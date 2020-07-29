@@ -1,13 +1,14 @@
 .blog__wrapper {
   @include site-width;
+  background-color: $off-white;
   display: flex;
   align-items: center;
   justify-items: center;;
-  padding: 60px 0;
-  border: 20px solid $white;
+  padding: 40px;
 }
 
 .blog__items {
+  border: 20px solid $white;
 
 }
 
