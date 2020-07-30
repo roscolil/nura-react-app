@@ -1,17 +1,26 @@
 .blog__wrapper {
   @include site-width;
+  position: relative;
   background-color: $off-white;
   display: flex;
   align-items: center;
-  justify-items: center;;
+  justify-items: center;
   padding: 40px;
 }
 
 .blog__items {
+  position: relative;
   border: 20px solid $white;
 
 }
 
 a {
   color: $charcoal;
+}
+
+h2 {
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

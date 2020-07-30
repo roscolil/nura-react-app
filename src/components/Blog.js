@@ -10,9 +10,9 @@ export default function Blog() {
   return (
     <div className="blog__wrapper">
       <Container>
-      {data.map((value, index) => {
-      return (
-        <Row key={index} className="blog__items">
+        {data.map((value, index) => {
+          return (
+            <Row key={index} className="blog__items">
               <Col>
                 <NavLink to={"/post/" + value.title}>
                   <img src={value.image} alt=""></img>
@@ -20,9 +20,9 @@ export default function Blog() {
                 </NavLink>
                 <p>{value.subheading}</p>
               </Col>
-              </Row>
-              );
-            })}
+            </Row>
+          );
+        })}
       </Container>
     </div>
   );

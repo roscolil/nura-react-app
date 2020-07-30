@@ -8,3 +8,11 @@
   padding-right: 40px;
   padding-left: 40px;
 }
+
+@mixin blog-post-width {
+  display: block;
+  max-width: 800px;
+  margin-bottom: 40px;
+  margin-left: 142px;
+  padding-top: 20px;
+}

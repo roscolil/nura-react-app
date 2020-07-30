@@ -6,7 +6,8 @@ const Header = () => {
   return (
     <div className="header">
       <NavLink to="/" className="nav-logo">
-        <img src="../../public/assets/Nura_Logo_Icon.png" alt="nura" />
+        {/* <img src="../../public/assets/Nura_Logo_Icon.png" alt="nura" /> */}
+        <img src="https://via.placeholder.com/60x30" alt="nura" />
       </NavLink>
       <ul className="nav">
         <li className="nav__item">
@@ -39,4 +40,3 @@ const Header = () => {
 }
 
 export default Header;
-// TODO Add NavLink react-router-dom
