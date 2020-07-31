@@ -1,0 +1,10 @@
+.home-wrapper {
+  @include site-width;
+  padding: 40px 0 40px 0;
+}
+
+.hero {
+  margin: 10px auto 40px auto;
+  width: 100%;
+}
+

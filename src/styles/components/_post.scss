@@ -1,3 +1,22 @@
-.post-wrapper {
+.container-fluid {
   @include site-width;
+}
+
+.post-wrapper {
+  @include blog-post-width;
+  margin: 60px auto;
+}
+
+.post-image {
+  display: block;
+  margin: 40px auto;
+  width: 100%;
+}
+
+.post-header {
+  border-bottom: 1px solid lightgrey;
+}
+
+.related-posts {
+  @include blog-post-width;
 }

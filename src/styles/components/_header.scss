@@ -1,22 +1,44 @@
 .header {
+  background: white;
+  border-bottom: 1px solid $light-grey;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar {
   @include site-width;
-  vertical-align: middle;
-}
-
-ul,
-li {
+  align-items: center;
+  display: flex;
+  height: 55px;
   list-style-type: none;
+  margin: 0 auto;
+  a {
+    text-decoration: none;
+  }
 }
 
-a {
-  text-decoration: none;
-}
-
-.nav {
-  text-align: center;
-}
-
-.nav__item {
-  margin: 0 20px;
+.navbar__link-item {
   display: inline-block;
+  margin: 0 30px;
+  span {
+    font-weight: 300;
+  }
+  a:hover {
+    color: rgba(0,0,1,.5);
+  }
+}
+
+.navbar__logo {
+  img {
+    height: auto;
+    margin-right: 60px;
+    width: 50px;
+  }
+}
+
+.is-active {
+  color: rgba(0,0,1,.5);
 }

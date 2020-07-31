@@ -1,18 +1,22 @@
 .blog__wrapper {
   @include site-width;
-  position: relative;
   background-color: $off-white;
   display: flex;
   align-items: center;
   justify-items: center;
-  padding: 40px;
+  padding: 140px 40px;
+  position: relative;
 }
 
-.blog__items {
+.blog__row {
   position: relative;
   border: 20px solid $white;
-
+  margin: auto;
 }
+
+// .blog__col {
+  
+// }
 
 a {
   color: $charcoal;
