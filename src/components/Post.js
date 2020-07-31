@@ -19,10 +19,10 @@ function Post() {
 
   return (
     <Container fluid>
-    <Row className="post-wrapper">
-    <Button onClick={() => history.goBack()} variant="outline-primary">
-    Back
-    </Button>
+      <Row className="post-wrapper">
+        <Button onClick={() => history.goBack()} variant="outline-primary">
+          Back
+        </Button>
         <div className="post-header">
           <h1>{blogPost.title}</h1>
           <h4>{blogPost.subheading}</h4>

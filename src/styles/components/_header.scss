@@ -2,7 +2,7 @@
   background: white;
   border-bottom: 1px solid $light-grey;
   display: flex;
-  position: fixed;
+  position: fixed !important;
   top: 0;
   width: 100%;
   z-index: 1;

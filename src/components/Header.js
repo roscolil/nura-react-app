@@ -2,10 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../Nura_Logo_Icon.png";
 import "../styles/styles.scss";
+import { Container } from "react-bootstrap";
 
 const Header = () => {
   return (
-    <div className="header">
+    <Container fluid className="header">
       <ul className="navbar">
         <NavLink to="/" className="navbar__logo">
           <img src={Logo} alt="nura" />
@@ -49,7 +50,7 @@ const Header = () => {
           <img src="" alt="" />
         </li>
       </ul>
-    </div>
+    </Container>
   );
 };
 

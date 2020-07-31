@@ -4,8 +4,12 @@
   background: $charcoal;
   height: 200px;
   h1 {
-    color: white;
+    color: $white;
     text-align: center;
     width: 100%;
   }
+}
+
+.col {
+  color: $white;
 }
