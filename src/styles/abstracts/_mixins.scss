@@ -1,0 +1,67 @@
+@mixin site-width {
+  position: relative;
+  display: block;
+  max-width: 1200px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+@mixin blog-post-width {
+  display: block;
+  max-width: 800px;
+  margin-bottom: 40px;
+  margin-left: 142px;
+  padding-top: 20px;
+}
+
+// -------- These gradients are to be reused/renamed See variables for color pallette --------- //
+
+// Background gradient
+@mixin bg-gradient($parent, $gradient) {
+  #{$parent} {
+    background: $gradient;
+  }
+}
+
+// Text gradient
+@mixin text-gradient($parent, $gradient) {
+  #{$parent} {
+    background-image: $gradient;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+// Border gradient
+@mixin border-gradient($parent, $gradient) {
+  #{$parent} {
+    border: 20px solid transparent;
+    border-width: 6px;
+    border-style: solid;
+    border-image: $gradient;
+    border-image-slice: 1;
+  }
+}
+
+// Gradient Classes 
+@each $gradient, $value in $gradients {
+  @include bg-gradient('.bg-gradient-#{$gradient}', $value);
+ }
+ // Gradient Classes 
+ @each $gradient, $value in $gradients {
+  @include text-gradient('.text-gradient-#{$gradient}', $value);
+ }
+
+ // Gradient Classes 
+ @each $gradient, $value in $gradients {
+  @include border-gradient('.border-gradient-#{$gradient}', $value);
+ }
+
+// ----- Example of how to use class in markup ------ //
+// <div class="full-screen bg-gradient-hot">
+//   <h2 class="title">Bacon is too awesome</h2>
+// </div>

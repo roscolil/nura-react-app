@@ -1,18 +1,20 @@
-// Functions, Variables & Mixins
-@import "./base/mixins";
-@import "./base/variables";
+@charset 'utf-8';
+
+// Functions, Fonts, Variables & Mixins
+@import "./abstracts/fonts";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
 
 // Global & Typography
 @import "./base/global";
 @import "./base/typography";
 
 // Components
-@import "./components/layout";
-@import "./components/header";
-@import "./components/footer";
-@import "./components/blog";
-@import "./components/post";
-@import "./components/nura-now";
-@import "./components/home";
+@import "./components/_components-dir";
+
+// Layouts
+@import "./layouts/layout";
+@import "./layouts/header";
+@import "./layouts/footer";
 
 
