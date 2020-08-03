@@ -4,27 +4,53 @@
   background-color: $off-white;
   display: flex;
   justify-items: center;
-  padding: 80px 40px;
+  padding: 40px 40px;
   position: relative;
+}
+
+.blog__hero-section {
+  width: 100%;
+  margin: 0 auto 20px auto;
+  border: 20px solid white;
+  background-color: $white;
 }
 
 .blog__row {
   border: 20px solid $white;
-  margin: auto;
-  position: relative;
+  margin: 0 auto 20px auto;
+  background-color: $white;
 }
 
-// .blog__col {
+.blog__col {
+    justify-content: space-between;
+}
   
-// }
-
-a {
-  color: $charcoal;
-}
-
-h2 {
+.blog__title {
+  color: $primary-text-color;
   left: 50%;
   position: absolute;
   top: 36%;
   transform: translate(-50%, -50%);
+}
+
+p {
+  color: $primary-text-color;
+  margin: 10px auto 0 auto;
+}
+
+.blog__paginate-row {
+  margin: 40px 0;
+}
+
+.blog__paginate-btn {
+  background-color: $primary-background-color;
+  border: 1px solid $light-grey;
+  border-radius: 5px;
+  margin: 0 auto;
+  a {
+     padding: 8px 25px;
+  }
+  span {
+    color: $primary-text-color;
+  }
 }

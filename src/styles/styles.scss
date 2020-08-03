@@ -5,16 +5,17 @@
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
 
+// Vendor
+@import "./vendor/bootstrap";
+
 // Global & Typography
 @import "./base/global";
 @import "./base/typography";
 
-// Components
-@import "./components/_components-dir";
-
 // Layouts
-@import "./layouts/layout";
 @import "./layouts/header";
+@import "./layouts/layout";
 @import "./layouts/footer";
 
-
+// Components
+@import "./components/_components-dir";

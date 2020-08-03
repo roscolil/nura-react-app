@@ -3,7 +3,7 @@
 }
 
 .post-wrapper {
-  @include blog-post-width;
+  // @include blog-post-width;
   margin: 0 auto;
 }
 
@@ -15,6 +15,10 @@
 
 .post-header {
   border-bottom: 1px solid lightgrey;
+}
+
+.post__back-link {
+
 }
 
 .related-posts {

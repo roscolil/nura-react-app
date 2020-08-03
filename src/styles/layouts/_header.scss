@@ -26,7 +26,11 @@
   span {
     font-weight: 300;
   }
-  a:hover {
+}
+
+a {
+  color: $primary-text-color;
+  &:hover {
     color: rgba(0,0,1,.5);
   }
 }

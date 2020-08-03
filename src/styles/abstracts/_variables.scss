@@ -6,6 +6,7 @@ $very-light-grey: #F5F5F5;
 $light-grey: #F7F7F7;
 $light-medium-grey: #F9F9F9;
 $medium-grey: #E5E5E5;
+$grey: #a8a7a7;
 $dark-grey: #333;
 $charcoal: #191919;
 $black: #000000;
@@ -25,9 +26,9 @@ $slate: #5C67A0;
 
 
 // Section and Layout text, backgrounds & borders
-$primary-text-color: $black;
+$primary-text-color: $charcoal;
 $secondary-text-color: $white;
-$tertiary-text-color: $charcoal;
+$tertiary-text-color: $black;
 
 $primary-background-color: $white;
 $secondary-background-color: $light-medium-grey;

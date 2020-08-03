@@ -19,10 +19,10 @@ function Post() {
 
   return (
     <Container fluid>
-      <Row className="post-wrapper">
-        <Button onClick={() => history.goBack()} variant="outline-primary">
+      <Col className="post-wrapper">
+        <a onClick={() => history.goBack()} className="post__back-link">
           Back
-        </Button>
+        </a>
         <div className="post-header">
           <h1>{blogPost.title}</h1>
           <h4>{blogPost.subheading}</h4>
@@ -44,10 +44,14 @@ function Post() {
           {blogPost.content}
           {blogPost.content}
         </p>
-      </Row>
+      </Col>
       <Row className="related-posts">
-        <Col lg={6}>Post Tile</Col>
-        <Col lg={6}>Post Tile</Col>
+        <Col>
+          <p>Post Tile</p>
+        </Col>
+        <Col>
+          <p>Post Tile</p>
+        </Col>
       </Row>
     </Container>
   );
