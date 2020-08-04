@@ -1,0 +1,43 @@
+.navbar {
+  @include site-width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.navbar__link-item {
+  display: inline-block;
+  margin: 0 30px;
+  span {
+    font-weight: 300;
+  }
+}
+
+a {
+  color: $primary-text-color;
+  text-decoration: none;
+  &:hover {
+    color: rgba(0,0,1,.5);
+    text-decoration: none;
+  }
+}
+
+.navbar__logo {
+  img {
+    height: auto;
+    margin-right: 60px;
+    width: 50px;
+  }
+}
+
+.is-active {
+  color: rgba(0,0,1,.5);
+}

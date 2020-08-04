@@ -2,14 +2,17 @@ import React from "react";
 import "normalize.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Layout from "../components/Layout";
-import Blog from "../components/Blog";
+import Blog from "../pages/Blog";
 import Post from "../components/Post";
-import Home from "../components/Home";
-import NuraNow from "../components/NuraNow";
+import Home from "../pages/Home";
+import NuraNow from "../pages/NuraNow";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Header />
       <Layout>
         <Switch>
           <div className="">
@@ -20,6 +23,7 @@ const App = () => {
           </div>
         </Switch>
       </Layout>
+      <Footer />
     </BrowserRouter>
   );
 };

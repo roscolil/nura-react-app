@@ -3,7 +3,6 @@
 }
 
 .post-wrapper {
-  // @include blog-post-width;
   margin: 0 auto;
 }
 
@@ -18,9 +17,24 @@
 }
 
 .post__back-link {
-
+ cursor: pointer;
 }
 
 .related-posts {
-  @include blog-post-width;
+  padding: 40px 0;
+  background-color: $off-white;
+  justify-content: center;
+}
+
+.blog__paginate-btn {
+  background-color: $primary-background-color;
+  border: 1px solid $light-grey;
+  border-radius: 5px;
+  margin: 0 auto;
+  a {
+     padding: 8px 25px;
+  }
+  span {
+    color: $primary-text-color;
+  }
 }

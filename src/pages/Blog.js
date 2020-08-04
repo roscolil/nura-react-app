@@ -10,8 +10,8 @@ export default function Blog() {
       <Row className="blog__hero-section">
         <Col>
           <NavLink to={"/post/"}>
-            <img src="https://via.placeholder.com/1000x500" alt="" />
-            <h2>Most recent blog post</h2>
+            <img src="https://www.fillmurray.com/1000/500" alt="" />
+            <h2 className="blog__title">Most recent blog post</h2>
           </NavLink>
           <p>Sub heading for hero post</p>
         </Col>
@@ -42,7 +42,7 @@ export default function Blog() {
               </NavLink>
               <p>{value.subheading + " for " + value.title}</p>
             </Col>
-            <Col lg={6} className="blog__col">
+            <Col lg={{ span: 6, offset: 0 }} className="blog__col">
               <NavLink to={"/post/" + value.title}>
                 <img src={value.image} alt="" />
                 <h2 className="blog__title">{value.title}</h2>

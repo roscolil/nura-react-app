@@ -1,14 +1,18 @@
 .footer {
-  @include site-width;
-  padding-top: 60px;
-  display: flex;
+  padding-top: 40px;
   background: $charcoal;
-  height: 200px;
+  height: 300px;
+  width: 100%;
   h1 {
     color: $white;
-    text-align: center;
-    width: 100%;
+    // text-align: center;
+    // width: 100%;
   }
+}
+
+.footer__row {
+  // @include site-width;
+  margin: 0 auto;
 }
 
 .col {

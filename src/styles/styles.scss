@@ -1,21 +1,16 @@
 @charset 'utf-8';
 
 // Functions, Fonts, Variables & Mixins
-@import "./abstracts/fonts";
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
+@import "./abstracts/_abstracts-dir";
 
 // Vendor
 @import "./vendor/bootstrap";
 
 // Global & Typography
-@import "./base/global";
-@import "./base/typography";
+@import "./base/_base-dir";
 
 // Layouts
-@import "./layouts/header";
-@import "./layouts/layout";
-@import "./layouts/footer";
+@import "./layouts/_layouts-dir";
 
 // Components
 @import "./components/_components-dir";
