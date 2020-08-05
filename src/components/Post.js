@@ -19,38 +19,52 @@ function Post() {
 
   return (
     <Container fluid className="post-wrapper">
-    <Row>
-    <Col lg={2}>
-      <span onClick={() => history.goBack()} className="post__back-link">
-        <span>Back to Articles</span>
-      </span>
-      </Col>
-      <Col lg={10}>
-      <div className="post-header">
-        <h1>{blogPost.title}</h1>
-        <h4>{blogPost.subheading}</h4>
-      </div>
-      <img
-        src="https://www.fillmurray.com/500/260"
-        alt=""
-        className="post-image"
-      />
-      <p>
-        {blogPost.content}
-        {blogPost.content}
-      </p>
-      <p>
-        {blogPost.content}
-        {blogPost.content}
-      </p>
-      <p>
-        {blogPost.content}
-        {blogPost.content}
-      </p>
-    </Col>
-    </Row>
+      <Row>
+        <Col lg={2} className="post__sidebar">
+          <Row className="post__social-links">
+            <a href="">
+              <img src="https://via.placeholder.com/40x40" alt="" />
+            </a>
+            <a href="">
+              <img src="https://via.placeholder.com/40x40" alt="" />
+            </a>
+            <a href="">
+              <img src="https://via.placeholder.com/40x40" alt="" />
+            </a>
+          </Row>
+          <Row>
+            <span onClick={() => history.goBack()} className="post__back-link">
+              <img src="https://via.placeholder.com/25x25" alt=""/>
+              <span>Back to Articles</span>
+            </span>
+          </Row>
+        </Col>
+        <Col lg={10} className="post__body">
+          <div className="post-header">
+            <h1>{blogPost.title}</h1>
+            <h4>{blogPost.subheading}</h4>
+          </div>
+          <img
+            src="https://www.fillmurray.com/500/260"
+            alt=""
+            className="post-image"
+          />
+          <p>
+            {blogPost.content}
+            {blogPost.content}
+          </p>
+          <p>
+            {blogPost.content}
+            {blogPost.content}
+          </p>
+          <p>
+            {blogPost.content}
+            {blogPost.content}
+          </p>
+        </Col>
+      </Row>
       <Row className="related-posts">
-      <Col>
+        <Col>
           <NavLink to={"/post/"}>
             <img src="https://www.fillmurray.com/480/260" alt="" />
             <h2 className="blog__title">Most recent blog post</h2>

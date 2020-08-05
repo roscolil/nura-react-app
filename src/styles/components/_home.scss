@@ -1,6 +1,7 @@
 .home-wrapper {
   @include site-width;
   padding: 60px 0;
+  display: flex;
 }
 
 .hero {

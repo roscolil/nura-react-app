@@ -2,6 +2,10 @@
   @include site-width;
 }
 
+.post__body {
+  padding: 40px 0;
+}
+
 .post-wrapper {
   margin: 0 auto;
 }
@@ -17,13 +21,17 @@
 }
 
 .post__back-link {
- cursor: pointer;
+  cursor: pointer;
+  margin-top: 20px;
+  img {
+    margin-right: 10px;
+  }
 }
 
 .related-posts {
-  padding: 40px 0;
   background-color: $off-white;
   justify-content: center;
+  padding: 40px 0;
 }
 
 .blog__paginate-btn {
@@ -36,5 +44,20 @@
   }
   span {
     color: $primary-text-color;
+  }
+}
+
+.post__sidebar {
+  margin-top: 40px;
+}
+
+.post__social-links {
+  justify-content: flex-start; 
+  margin-top: 20px;
+  a:nth-child(2) {
+    margin: 0 10px;
+  }
+  img {
+    border-radius: 20px;
   }
 }
