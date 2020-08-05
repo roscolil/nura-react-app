@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/styles.scss";
+import "./NuraNow.module.scss";
 
 const NuraNow =() => {
   return (

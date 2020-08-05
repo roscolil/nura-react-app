@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useHistory, NavLink } from "react-router-dom";
 import { Container, Row, Col, Pagination } from "react-bootstrap";
-import "../styles/styles.scss";
+import "./Post.module.scss";
 // import data from "../data.json";
 
 function Post() {
@@ -22,13 +22,13 @@ function Post() {
       <Row>
         <Col lg={2} className="post__sidebar">
           <Row className="post__social-links">
-            <a href="">
+            <a href="/">
               <img src="https://via.placeholder.com/40x40" alt="" />
             </a>
-            <a href="">
+            <a href="/">
               <img src="https://via.placeholder.com/40x40" alt="" />
             </a>
-            <a href="">
+            <a href="/">
               <img src="https://via.placeholder.com/40x40" alt="" />
             </a>
           </Row>

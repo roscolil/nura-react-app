@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Container, Row, Col, Pagination } from "react-bootstrap";
-import "../styles/styles.scss";
-import data from "../data.json";
+import "./Blog.module.scss";
+import data from "../../data.json";
 
 export default function Blog() {
   return (

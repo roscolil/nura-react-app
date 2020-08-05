@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../assets/Nura_Logo_Icon.png";
-import "../styles/styles.scss";
+import Logo from "../../assets/Nura_Logo_Icon.png";
+import "./NavBar.module.scss";
 
 const Header = () => {
   return (
