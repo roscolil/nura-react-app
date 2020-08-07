@@ -1,54 +1,54 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/Nura_Logo_Icon.png";
-import "./NavBar.module.scss";
+import styles from "./NavBar.module.scss";
 
 const Header = () => {
   return (
-    <div className="navbar">
-        <ul>
-          <NavLink to="/" className="navbar__logo">
-            <img src={Logo} alt="nura" />
+    <div className={styles.navbar}>
+      <ul>
+        <NavLink to="/" className={styles.navbarLogo}>
+          <img src={Logo} alt="nura" />
+        </NavLink>
+        <li className={styles.navbarLinkItem}>
+          <NavLink to="/nuranow" activeClassName={styles.isActive}>
+            nura<span>now</span>
           </NavLink>
-          <li className="navbar__link-item">
-            <NavLink to="/nuranow" activeClassName="is-active">
-              nura<span>now</span>
-            </NavLink>
-          </li>
-          <li className="navbar__link-item">
-            <NavLink to="/nuraphone" activeClassName="is-active">
-              nura<span>phone</span>
-            </NavLink>
-          </li>
-          <li className="navbar__link-item">
-            <NavLink to="/nuraloop" activeClassName="is-active">
-              nura<span>loop</span>
-            </NavLink>
-          </li>
-          <li className="navbar__link-item">
-            <NavLink to="/how-it-works" activeClassName="is-active">
-              How it Works
-            </NavLink>
-          </li>
-          <li className="navbar__link-item">
-            <NavLink to="/accessories" activeClassName="is-active">
-              Accessories
-            </NavLink>
-          </li>
-          <li className="navbar__link-item">
-            <NavLink to="/blog" activeClassName="is-active">
-              Blog
-            </NavLink>
-          </li>
-          <li className="navbar__link-item">
-            <NavLink to="/support" activeClassName="is-active">
-              Support
-            </NavLink>
-          </li>
-          <li className="navbar__cart">
-            <img src="" alt="" />
-          </li>
-        </ul>
+        </li>
+        <li className={styles.navbarLinkItem}>
+          <NavLink to="/nuraphone" activeClassName={styles.isActive}>
+            nura<span>phone</span>
+          </NavLink>
+        </li>
+        <li className={styles.navbarLinkItem}>
+          <NavLink to="/nuraloop" activeClassName={styles.isActive}>
+            nura<span>loop</span>
+          </NavLink>
+        </li>
+        <li className={styles.navbarLinkItem}>
+          <NavLink to="/how-it-works" activeClassName={styles.isActive}>
+            How it Works
+          </NavLink>
+        </li>
+        <li className={styles.navbarLinkItem}>
+          <NavLink to="/accessories" activeClassName={styles.isActive}>
+            Accessories
+          </NavLink>
+        </li>
+        <li className={styles.navbarLinkItem}>
+          <NavLink to="/blog" activeClassName={styles.isActive}>
+            Blog
+          </NavLink>
+        </li>
+        <li className={styles.navbarLinkItem}>
+          <NavLink to="/support" activeClassName={styles.isActive}>
+            Support
+          </NavLink>
+        </li>
+        <li className={styles.navbarCart}>
+          <img src="" alt="" />
+        </li>
+      </ul>
     </div>
   );
 };

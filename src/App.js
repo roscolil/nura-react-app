@@ -1,6 +1,6 @@
 import React from "react";
 import "normalize.css";
-// import "../styles/styles.scss";
+import "./styles/styles.scss";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Blog from "./pages/Blog/Blog";

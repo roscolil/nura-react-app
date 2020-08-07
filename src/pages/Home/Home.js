@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./Home.module.scss";
+import styles from "./Home.module.scss";
 
 const Home = () => {
   return (
-    <div className="home-wrapper">
+    <div className={styles.homeWrapper}>
       <Container fluid>
         <h1>Home Page</h1>
-        <img src="https://www.fillmurray.com/800/500" alt="" className="hero" />
+        <img src="https://www.fillmurray.com/800/500" alt="" className={styles.homeHero} />
         <div>
           <h3>Home page hero heading</h3>
 

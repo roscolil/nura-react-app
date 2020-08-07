@@ -1,11 +1,12 @@
 import React from "react";
-import "./NuraNow.module.scss";
+import styles from "./NuraNow.module.scss";
+import { Container } from "react-bootstrap";
 
 const NuraNow =() => {
   return (
-    <div className="nuranow-wrapper">
+    <Container fluid className={styles.nuranowWrapper}>
       <h1>Nuranow page</h1>
-    </div>
+    </Container>
   );
 };
 

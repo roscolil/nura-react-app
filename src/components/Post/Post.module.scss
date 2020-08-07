@@ -1,28 +1,29 @@
 @import "../../styles/styles.scss";
 
-.container-fluid {
+.post {
+
+}
+
+.postWrapper {
   @include site-width;
-}
-
-.post__body {
-  padding: 40px 0;
-}
-
-.post-wrapper {
   margin: 0 auto;
 }
 
-.post-image {
+.postBody {
+  padding: 40px 0;
+}
+
+.postImage {
   display: block;
   margin: 40px auto;
   width: 100%;
 }
 
-.post-header {
+.postHeader {
   border-bottom: 1px solid lightgrey;
 }
 
-.post__back-link {
+.postBackLink {
   cursor: pointer;
   margin-top: 20px;
   img {
@@ -30,13 +31,27 @@
   }
 }
 
-.related-posts {
+.relatedPostsSection {
   background-color: $off-white;
   justify-content: center;
+  padding-top: 40px;
+}
+
+.relatedPost {
+  // @include site-width;
+    // border: 20px solid $white;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.blogPaginateRow {
+  background-color: $off-white;
   padding: 40px 0;
 }
 
-.blog__paginate-btn {
+.blogPaginateBtn {
   background-color: $primary-background-color;
   border: 1px solid $light-grey;
   border-radius: 5px;
@@ -49,11 +64,11 @@
   }
 }
 
-.post__sidebar {
+.postSidebar {
   margin-top: 40px;
 }
 
-.post__social-links {
+.postSocialLinks {
   justify-content: flex-start; 
   margin-top: 20px;
   a:nth-child(2) {

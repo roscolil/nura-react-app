@@ -1,12 +1,12 @@
 @import "../../styles/styles.scss";
 
-.home-wrapper {
+.homeWrapper {
   @include site-width;
   padding: 60px 0;
   display: flex;
 }
 
-.hero {
+.homeHero {
   margin: 10px auto 40px auto;
   width: 100%;
 }

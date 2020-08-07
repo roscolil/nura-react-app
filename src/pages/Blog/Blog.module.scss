@@ -1,6 +1,6 @@
 @import "../../styles/styles.scss";
 
-.blog__wrapper {
+.blogWrapper {
   @include site-width;
   align-items: center;
   background-color: $off-white;
@@ -10,28 +10,28 @@
   position: relative;
 }
 
-.blog__hero-section {
+.blogHero {
   width: 100%;
   margin: 0 auto 20px auto;
   border: 20px solid white;
   background-color: $white;
 }
 
-.blog__row {
+.blogRow {
   border: 20px solid $white;
   margin: 0 auto 20px auto;
   background-color: $white;
 }
 
-.blog__col {
+.blogColumn {
     justify-content: space-between;
 }
   
-.blog__title {
+.blogTitle {
   color: $white;
   left: 50%;
   position: absolute;
-  top: 36%;
+  top: 40%;
   transform: translate(-50%, -50%);
 }
 
@@ -40,11 +40,11 @@ p {
   margin: 10px auto 0 auto;
 }
 
-.blog__paginate-row {
+.blogPaginateRow {
   margin: 40px 0;
 }
 
-.blog__paginate-btn {
+.blogPaginateBtn {
   background-color: $primary-background-color;
   border: 1px solid $light-grey;
   border-radius: 5px;
