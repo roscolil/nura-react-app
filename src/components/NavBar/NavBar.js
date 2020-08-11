@@ -41,9 +41,9 @@ const Header = () => {
           </NavLink>
         </li>
         <li className={styles.navbarLinkItem}>
-          <NavLink to="/support" activeClassName={styles.isActive}>
+          <a href="https://help.nuraphone.com">
             Support
-          </NavLink>
+          </a>
         </li>
         <li className={styles.navbarCart}>
           <img src="" alt="" />
